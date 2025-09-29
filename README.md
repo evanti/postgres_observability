@@ -1,6 +1,6 @@
 # Postgres database performance observability and investigation 
 
-This repository consists of a single readme file that contains description of how I recommend to approach Postgres database performance observability and investigation, how I use Grafana dashboards as an analytical DB interface for investigations, which data I collect and how I visualize the data to support thinking and analysis.
+<!-- This repository consists of a single readme file that contains description of how I recommend to approach Postgres database performance observability and investigation, how I use Grafana dashboards as an analytical DB interface for investigations, which data I collect and how I visualize the data to support thinking and analysis.
 
 
 Tone reminder (keep handy)
@@ -26,7 +26,7 @@ Inline first person (sparingly):
 “I cap the top-N at 8 to keep patterns legible. For multi-host views I pin y-axes per host to avoid cross-node misreads.”
 
 Legitimate plural (team or tutorial):
-“We standardize on pg_stat_statements with per-minute exports and reject samples with clock skew greater than 200 ms. We align exporter and database clocks via NTP.”
+“We standardize on pg_stat_statements with per-minute exports and reject samples with clock skew greater than 200 ms. We align exporter and database clocks via NTP.” -->
 
 
 
