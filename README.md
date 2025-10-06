@@ -28,5 +28,11 @@ Inline first person (sparingly):
 Legitimate plural (team or tutorial):
 “We standardize on pg_stat_statements with per-minute exports and reject samples with clock skew greater than 200 ms. We align exporter and database clocks via NTP.” -->
 
+introduction
 
 
+I've been to a thousand performance troubleshooting sessions. That's when there's a production incident, a customer complaint, or a release regression, and everybody gathers in a Zoom conference and tries to analyze what the problem is and figure out how to find out and confirm the root cause.
+If you are running a heavy enterprise solution, telecom or a financial application, you are likely to rely on a relational database with full ACID compliance and all the reliability features. They are so convenient that we move some of the business logic into the queries and stored procedures. So now the database becomes part of our solution, and when something goes wrong, we need to understand what is happening inside the database just as well as the application code that we write ourselves.
+
+
+Develops, Infra engineers, DBAs, SREs and whoever cares to be in charge of this circus
