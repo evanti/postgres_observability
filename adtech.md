@@ -29,7 +29,9 @@ https://www.adnimation.com/services/websites-ads-monetization/
 <img width="1014" height="569" alt="image" src="https://github.com/user-attachments/assets/0db58e2e-b094-4adc-ad58-21e6487bab40" />
 
 Два тематических реддита, туда вполне можно было бы что-нибудь написать.
+
 9. https://www.reddit.com/r/adops/
+
 10. https://www.reddit.com/r/programmatic/
 
 11. Прекрасные люди, но в Лондоне у них ничего нет https://www.beersadopsadtech.com/
