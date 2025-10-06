@@ -1,8 +1,8 @@
 Интересные сайты коллег и конкурентов:
 
-https://www.publisher-collective.com/monetize/ad-engine – другая модель, We’re not a plug-and-play platform. We don’t hand over tools and walk away. We stay hands-on and keep optimizing. Они купили себе Snigel, это известное такое решение, судя по всему.
+### https://www.publisher-collective.com/monetize/ad-engine – другая модель, We’re not a plug-and-play platform. We don’t hand over tools and walk away. We stay hands-on and keep optimizing. Они купили себе Snigel, это известное такое решение, судя по всему.
 
-https://yieldbird.com/viewability-tools посмотри на их подход к viewability
+### https://yieldbird.com/viewability-tools посмотри на их подход к viewability
 <img width="2362" height="492" alt="image" src="https://github.com/user-attachments/assets/b20278dc-524b-4ce8-9247-c368eb39bf3a" />
 У них другая модель по деньгам 
 <img width="2184" height="740" alt="image" src="https://github.com/user-attachments/assets/396c63ee-2dbe-4280-bb62-1d037fbcdb6c" />
