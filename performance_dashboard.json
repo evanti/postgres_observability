@@ -36,451 +36,6 @@
         "x": 0,
         "y": 0
       },
-      "id": 847,
-      "panels": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "custom": {
-                "align": "center",
-                "cellOptions": {
-                  "type": "auto"
-                },
-                "filterable": true,
-                "inspect": true
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "locale"
-            },
-            "overrides": [
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "query"
-                },
-                "properties": [
-                  {
-                    "id": "custom.align",
-                    "value": "left"
-                  },
-                  {
-                    "id": "custom.width",
-                    "value": 300
-                  }
-                ]
-              },
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "user_name"
-                },
-                "properties": [
-                  {
-                    "id": "custom.align",
-                    "value": "auto"
-                  }
-                ]
-              }
-            ]
-          },
-          "gridPos": {
-            "h": 12,
-            "w": 24,
-            "x": 0,
-            "y": 1
-          },
-          "id": 846,
-          "interval": "1m",
-          "options": {
-            "cellHeight": "sm",
-            "footer": {
-              "countRows": false,
-              "enablePagination": true,
-              "fields": [],
-              "reducer": [
-                "sum"
-              ],
-              "show": true
-            },
-            "frameIndex": 6,
-            "showHeader": true,
-            "sortBy": [
-              {
-                "desc": true,
-                "displayName": "Calls"
-              }
-            ]
-          },
-          "pluginVersion": "11.5.2",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"calls\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "calls",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_time_ms\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "total_time_ms",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_io_bytes\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "total_io_bytes",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_cpu_time_ms\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "total_cpu_time_ms",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"plans\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "plans",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"rows\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "rows",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"plan_time_ms\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "plan_time_ms",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_plan_cpu_time_ms\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "total_plan_cpu_time_ms",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=\"total_blk_read_time_ms\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "total_blk_read_time_ms",
-              "useBackend": false
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${datasource}"
-              },
-              "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=\"total_blk_write_time_ms\"}[$__range]))",
-              "format": "table",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "instant": false,
-              "legendFormat": "__auto",
-              "range": true,
-              "refId": "total_blk_write_time_ms",
-              "useBackend": false
-            }
-          ],
-          "title": "Query stats",
-          "transformations": [
-            {
-              "id": "merge",
-              "options": {}
-            },
-            {
-              "id": "groupBy",
-              "options": {
-                "fields": {
-                  "Value #A": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #B": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #C": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #D": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #E": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #F": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #calls": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #plan_time_ms": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #plans": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #rows": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #total_blk_read_time_ms": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #total_blk_write_time_ms": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #total_cpu_time_ms": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #total_io_bytes": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #total_plan_cpu_time_ms": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "Value #total_time_ms": {
-                    "aggregations": [
-                      "lastNotNull"
-                    ],
-                    "operation": "aggregate"
-                  },
-                  "query": {
-                    "aggregations": [],
-                    "operation": "groupby"
-                  },
-                  "top": {
-                    "aggregations": [],
-                    "operation": "groupby"
-                  },
-                  "user_name": {
-                    "aggregations": [],
-                    "operation": "groupby"
-                  }
-                }
-              }
-            },
-            {
-              "id": "organize",
-              "options": {
-                "excludeByName": {},
-                "includeByName": {},
-                "indexByName": {
-                  "Value #calls (lastNotNull)": 3,
-                  "Value #plans (lastNotNull)": 7,
-                  "Value #rows (lastNotNull)": 8,
-                  "Value #total_cpu_time_ms (lastNotNull)": 6,
-                  "Value #total_io_bytes (lastNotNull)": 5,
-                  "Value #total_time_ms (lastNotNull)": 4,
-                  "query": 0,
-                  "top": 2,
-                  "user_name": 1
-                },
-                "renameByName": {
-                  "Value #calls (lastNotNull)": "Calls",
-                  "Value #plan_time_ms (lastNotNull)": "Plan time,ms",
-                  "Value #plans (lastNotNull)": "Plans",
-                  "Value #rows (lastNotNull)": "Rows",
-                  "Value #total_blk_read_time_ms (lastNotNull)": "Block read time, ms",
-                  "Value #total_blk_write_time_ms (lastNotNull)": "Block write time, ms",
-                  "Value #total_cpu_time_ms (lastNotNull)": "Total CPU time, ms",
-                  "Value #total_io_bytes (lastNotNull)": "Total IO, bytes",
-                  "Value #total_plan_cpu_time_ms (lastNotNull)": "Plan CPU time, ms",
-                  "Value #total_time_ms (lastNotNull)": "Total time, ms",
-                  "query": "Query",
-                  "top": "",
-                  "user_name": "User"
-                }
-              }
-            }
-          ],
-          "type": "table"
-        }
-      ],
-      "title": "Queries - aggregated table -",
-      "type": "row"
-    },
-    {
-      "collapsed": true,
-      "gridPos": {
-        "h": 1,
-        "w": 24,
-        "x": 0,
-        "y": 1
-      },
       "id": 687,
       "panels": [
         {
@@ -1610,7 +1165,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 2
+        "y": 1
       },
       "id": 738,
       "panels": [
@@ -2156,7 +1711,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 3
+        "y": 2
       },
       "id": 704,
       "panels": [
@@ -2879,7 +2434,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 4
+        "y": 3
       },
       "id": 713,
       "panels": [
@@ -4347,7 +3902,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 5
+        "y": 4
       },
       "id": 666,
       "panels": [
@@ -4943,7 +4498,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 6
+        "y": 5
       },
       "id": 562,
       "panels": [
@@ -5517,6 +5072,452 @@
         }
       ],
       "title": "Queries - time series - filtered",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 6
+      },
+      "id": 847,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "center",
+                "cellOptions": {
+                  "type": "auto"
+                },
+                "filterable": true,
+                "inspect": true
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "query"
+                },
+                "properties": [
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 300
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "user_name"
+                },
+                "properties": [
+                  {
+                    "id": "custom.align",
+                    "value": "auto"
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 12,
+            "w": 24,
+            "x": 0,
+            "y": 1
+          },
+          "id": 846,
+          "interval": "1m",
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "enablePagination": true,
+              "fields": [],
+              "reducer": [
+                "sum"
+              ],
+              "show": true
+            },
+            "frameIndex": 6,
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Calls"
+              }
+            ]
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"calls\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "calls",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_time_ms\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "total_time_ms",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_io_bytes\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "total_io_bytes",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_cpu_time_ms\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "total_cpu_time_ms",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"plans\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "plans",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"rows\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "rows",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"plan_time_ms\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "plan_time_ms",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=~\"total_plan_cpu_time_ms\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "total_plan_cpu_time_ms",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=\"total_blk_read_time_ms\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "total_blk_read_time_ms",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(query, user_name, top) (increase(sql_pg_queries_v2{col=\"total_blk_write_time_ms\",query=~\"$query_include_regex\", user_name=~\"$user_include_regex\", query!~\"$query_exclude_regex\", user_name!~\"$user_exclude_regex\"}[$__range]))",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "total_blk_write_time_ms",
+              "useBackend": false
+            }
+          ],
+          "title": "Query stats",
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            },
+            {
+              "id": "groupBy",
+              "options": {
+                "fields": {
+                  "Value #A": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #B": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #C": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #D": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #E": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #F": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #calls": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #plan_time_ms": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #plans": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #rows": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #total_blk_read_time_ms": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #total_blk_write_time_ms": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #total_cpu_time_ms": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #total_io_bytes": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #total_plan_cpu_time_ms": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #total_time_ms": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "query": {
+                    "aggregations": [],
+                    "operation": "groupby"
+                  },
+                  "top": {
+                    "aggregations": [],
+                    "operation": "groupby"
+                  },
+                  "user_name": {
+                    "aggregations": [],
+                    "operation": "groupby"
+                  }
+                }
+              }
+            },
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {},
+                "includeByName": {},
+                "indexByName": {
+                  "Value #calls (lastNotNull)": 3,
+                  "Value #plans (lastNotNull)": 7,
+                  "Value #rows (lastNotNull)": 8,
+                  "Value #total_cpu_time_ms (lastNotNull)": 6,
+                  "Value #total_io_bytes (lastNotNull)": 5,
+                  "Value #total_time_ms (lastNotNull)": 4,
+                  "query": 0,
+                  "top": 2,
+                  "user_name": 1
+                },
+                "renameByName": {
+                  "Value #calls (lastNotNull)": "Calls",
+                  "Value #plan_time_ms (lastNotNull)": "Plan time,ms",
+                  "Value #plans (lastNotNull)": "Plans",
+                  "Value #rows (lastNotNull)": "Rows",
+                  "Value #total_blk_read_time_ms (lastNotNull)": "Block read time, ms",
+                  "Value #total_blk_write_time_ms (lastNotNull)": "Block write time, ms",
+                  "Value #total_cpu_time_ms (lastNotNull)": "Total CPU time, ms",
+                  "Value #total_io_bytes (lastNotNull)": "Total IO, bytes",
+                  "Value #total_plan_cpu_time_ms (lastNotNull)": "Plan CPU time, ms",
+                  "Value #total_time_ms (lastNotNull)": "Total time, ms",
+                  "query": "Query",
+                  "top": "",
+                  "user_name": "User"
+                }
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Queries - aggregated table - filtered",
       "type": "row"
     },
     {
@@ -11971,8 +11972,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -12104,8 +12104,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -12380,8 +12379,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -12552,8 +12550,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -12736,8 +12733,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -12867,8 +12863,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -12997,8 +12992,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -13098,8 +13092,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -13210,8 +13203,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -13338,8 +13330,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -13449,8 +13440,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -13574,8 +13564,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   }
                 ]
               },
@@ -13686,8 +13675,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   }
                 ]
               },
@@ -13798,8 +13786,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   }
                 ]
               },
@@ -13910,8 +13897,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   }
                 ]
               },
@@ -14512,18 +14498,18 @@
       },
       {
         "current": {
-          "text": ".*.*",
-          "value": ".*.*"
+          "text": ".*rate.*",
+          "value": ".*rate.*"
         },
         "name": "user_include_regex",
         "options": [
           {
             "selected": true,
-            "text": ".*.*",
-            "value": ".*.*"
+            "text": ".*rate.*",
+            "value": ".*rate.*"
           }
         ],
-        "query": ".*.*",
+        "query": ".*rate.*",
         "type": "textbox"
       },
       {
@@ -14573,6 +14559,6 @@
   "timezone": "browser",
   "title": "PostgreSQL Performance Troubleshooting",
   "uid": "af0cux4wi7jeof",
-  "version": 21,
+  "version": 23,
   "weekStart": ""
 }
