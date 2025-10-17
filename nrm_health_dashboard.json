@@ -87,7 +87,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -103,7 +104,7 @@
             "h": 10,
             "w": 8,
             "x": 0,
-            "y": 1
+            "y": 106
           },
           "id": 678,
           "interval": "1m",
@@ -134,8 +135,8 @@
                 "uid": "${datasource}"
               },
               "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname=~\"billsummary\"}[2m])) / 120",
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname=~\"billsummary\"}[1m])) / 60",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
@@ -215,7 +216,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -231,7 +233,7 @@
             "h": 10,
             "w": 8,
             "x": 8,
-            "y": 1
+            "y": 106
           },
           "id": 677,
           "interval": "1m",
@@ -262,8 +264,8 @@
                 "uid": "${datasource}"
               },
               "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname=~\".*costedevent.*\"}[2m])) / 120",
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname=~\".*costedevent.*\"}[1m])) / 60",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
@@ -342,7 +344,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -358,7 +361,7 @@
             "h": 10,
             "w": 8,
             "x": 16,
-            "y": 1
+            "y": 106
           },
           "id": 682,
           "interval": "1m",
@@ -389,7 +392,7 @@
               },
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_upd\", relname=~\"billsummary\"}[2m])) / 2",
+              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_upd\", relname=~\"billsummary\"}[1m]))",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
@@ -469,7 +472,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -485,7 +489,7 @@
             "h": 10,
             "w": 8,
             "x": 0,
-            "y": 3764
+            "y": 1698
           },
           "id": 686,
           "interval": "1m",
@@ -597,7 +601,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -613,7 +618,7 @@
             "h": 10,
             "w": 8,
             "x": 8,
-            "y": 3764
+            "y": 1698
           },
           "id": 684,
           "interval": "1m",
@@ -722,7 +727,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -738,7 +744,7 @@
             "h": 10,
             "w": 8,
             "x": 16,
-            "y": 3764
+            "y": 1698
           },
           "id": 793,
           "interval": "1m",
@@ -771,7 +777,7 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_del\", relname=~\".*costedevent.*\"}[2m])) / 2",
+              "expr": "sum by(col) (increase(sql_pg_tables_v2{col=~\"n_tup_del\", relname=~\".*costedevent.*\"}[1m]))",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
@@ -850,7 +856,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -865,7 +872,7 @@
             "h": 11,
             "w": 8,
             "x": 0,
-            "y": 3774
+            "y": 1708
           },
           "id": 836,
           "interval": "1m",
@@ -948,7 +955,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -964,7 +972,7 @@
             "h": 11,
             "w": 8,
             "x": 8,
-            "y": 3774
+            "y": 1708
           },
           "id": 723,
           "interval": "1m",
@@ -1076,7 +1084,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1092,7 +1101,7 @@
             "h": 11,
             "w": 8,
             "x": 16,
-            "y": 3774
+            "y": 1708
           },
           "id": 726,
           "interval": "1m",
@@ -1218,7 +1227,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1234,7 +1244,7 @@
             "h": 11,
             "w": 24,
             "x": 0,
-            "y": 2
+            "y": 1720
           },
           "id": 739,
           "interval": "1m",
@@ -1343,7 +1353,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1359,7 +1370,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 345
+            "y": 1731
           },
           "id": 744,
           "interval": "1m",
@@ -1431,7 +1442,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1447,7 +1459,7 @@
             "h": 13,
             "w": 12,
             "x": 0,
-            "y": 357
+            "y": 1743
           },
           "id": 740,
           "interval": "1m",
@@ -1538,7 +1550,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1554,7 +1567,7 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 357
+            "y": 1743
           },
           "id": 754,
           "interval": "1m",
@@ -1643,7 +1656,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1659,7 +1673,7 @@
             "h": 4,
             "w": 12,
             "x": 12,
-            "y": 366
+            "y": 1752
           },
           "id": 741,
           "interval": "1m",
@@ -1778,7 +1792,7 @@
             "h": 9,
             "w": 5,
             "x": 0,
-            "y": 3
+            "y": 108
           },
           "id": 702,
           "interval": "1m",
@@ -1901,7 +1915,7 @@
             "h": 9,
             "w": 10,
             "x": 5,
-            "y": 3
+            "y": 108
           },
           "id": 834,
           "interval": "1m",
@@ -1997,7 +2011,7 @@
             "h": 9,
             "w": 9,
             "x": 15,
-            "y": 3
+            "y": 108
           },
           "id": 693,
           "interval": "1m",
@@ -2159,7 +2173,7 @@
             "h": 7,
             "w": 24,
             "x": 0,
-            "y": 12
+            "y": 117
           },
           "id": 842,
           "interval": "1m",
@@ -2354,7 +2368,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 19
+            "y": 124
           },
           "id": 715,
           "interval": "1m",
@@ -2471,7 +2485,7 @@
             "h": 13,
             "w": 12,
             "x": 0,
-            "y": 1602
+            "y": 7661
           },
           "id": 794,
           "interval": "1m",
@@ -2575,7 +2589,7 @@
             "h": 13,
             "w": 12,
             "x": 12,
-            "y": 1602
+            "y": 7661
           },
           "id": 777,
           "interval": "1m",
@@ -2678,7 +2692,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 1771
+            "y": 7830
           },
           "id": 778,
           "interval": "1m",
@@ -2798,7 +2812,7 @@
             "h": 10,
             "w": 4,
             "x": 0,
-            "y": 5
+            "y": 138
           },
           "id": 771,
           "interval": "1m",
@@ -2873,7 +2887,7 @@
             "h": 5,
             "w": 4,
             "x": 4,
-            "y": 5
+            "y": 138
           },
           "id": 584,
           "interval": "1m",
@@ -2950,7 +2964,7 @@
             "h": 5,
             "w": 4,
             "x": 8,
-            "y": 5
+            "y": 138
           },
           "id": 601,
           "interval": "1m",
@@ -3026,7 +3040,7 @@
             "h": 5,
             "w": 4,
             "x": 12,
-            "y": 5
+            "y": 138
           },
           "id": 827,
           "interval": "1m",
@@ -3167,7 +3181,7 @@
             "h": 5,
             "w": 4,
             "x": 16,
-            "y": 5
+            "y": 138
           },
           "id": 837,
           "interval": "1m",
@@ -3256,7 +3270,7 @@
             "h": 5,
             "w": 4,
             "x": 20,
-            "y": 5
+            "y": 138
           },
           "id": 801,
           "options": {
@@ -3325,7 +3339,7 @@
             "h": 5,
             "w": 4,
             "x": 4,
-            "y": 10
+            "y": 143
           },
           "id": 712,
           "interval": "1m",
@@ -3401,7 +3415,7 @@
             "h": 5,
             "w": 4,
             "x": 8,
-            "y": 10
+            "y": 143
           },
           "id": 707,
           "interval": "1m",
@@ -3478,7 +3492,7 @@
             "h": 5,
             "w": 4,
             "x": 12,
-            "y": 10
+            "y": 143
           },
           "id": 823,
           "interval": "1m",
@@ -3589,7 +3603,7 @@
             "h": 5,
             "w": 4,
             "x": 16,
-            "y": 10
+            "y": 143
           },
           "id": 835,
           "interval": "1m",
@@ -3698,7 +3712,7 @@
             "h": 5,
             "w": 4,
             "x": 20,
-            "y": 10
+            "y": 143
           },
           "id": 840,
           "options": {
@@ -3772,7 +3786,7 @@
             "h": 5,
             "w": 4,
             "x": 0,
-            "y": 15
+            "y": 148
           },
           "id": 690,
           "interval": "1m",
@@ -3895,7 +3909,7 @@
             "h": 5,
             "w": 4,
             "x": 4,
-            "y": 15
+            "y": 148
           },
           "id": 709,
           "interval": "1m",
@@ -4049,7 +4063,7 @@
             "h": 5,
             "w": 4,
             "x": 8,
-            "y": 15
+            "y": 148
           },
           "id": 698,
           "options": {
@@ -4131,7 +4145,7 @@
             "h": 5,
             "w": 4,
             "x": 12,
-            "y": 15
+            "y": 148
           },
           "id": 799,
           "interval": "1m",
@@ -4206,7 +4220,7 @@
             "h": 5,
             "w": 4,
             "x": 16,
-            "y": 15
+            "y": 148
           },
           "id": 774,
           "interval": "1m",
@@ -4279,7 +4293,7 @@
             "h": 5,
             "w": 4,
             "x": 20,
-            "y": 15
+            "y": 148
           },
           "id": 833,
           "interval": "1m",
@@ -4506,7 +4520,7 @@
             "h": 13,
             "w": 24,
             "x": 0,
-            "y": 77
+            "y": 139
           },
           "id": 805,
           "options": {
@@ -4911,7 +4925,7 @@
             "h": 15,
             "w": 12,
             "x": 0,
-            "y": 176
+            "y": 152
           },
           "id": 806,
           "interval": "1m",
@@ -5014,7 +5028,7 @@
             "h": 15,
             "w": 12,
             "x": 12,
-            "y": 176
+            "y": 152
           },
           "id": 786,
           "interval": "1m",
@@ -5117,7 +5131,7 @@
             "h": 16,
             "w": 12,
             "x": 0,
-            "y": 191
+            "y": 167
           },
           "id": 807,
           "interval": "1m",
@@ -5143,7 +5157,7 @@
             {
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "sum by(query, user_name, xact_start, col) (sql_pg_transactions_v2{col=~\"backend_xmin_age|backend_xid_age\", query!~\".*raterdataproperties.*\", user_name!=\"system user\"}) > 100000",
+              "expr": "sum by(query, user_name, xact_start, col) (sql_pg_transactions_v2{col=~\"backend_xmin_age|backend_xid_age\", query!~\".*raterdataproperties.*\", user_name!=\"system user\"}) ",
               "fullMetaSearch": false,
               "includeNullMetadata": true,
               "legendFormat": "{{query}} | {{user_name}}",
@@ -5221,7 +5235,7 @@
             "h": 16,
             "w": 12,
             "x": 12,
-            "y": 191
+            "y": 167
           },
           "id": 688,
           "interval": "1m",
@@ -5252,6 +5266,7 @@
               "editorMode": "builder",
               "expr": "sum by() (sql_pg_cluster_v2{col=\"current_xid\"})",
               "fullMetaSearch": false,
+              "hide": false,
               "includeNullMetadata": true,
               "instant": false,
               "legendFormat": "__auto",
@@ -5266,7 +5281,7 @@
               },
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "sum by(user_name, query, col, query_start, pid_text) (sql_pg_long_running_v2{col=~\"backend_xmin|backend_xid\", query!~\".*raterdata.*\", user_name!=\"system user\"}) > 0",
+              "expr": "sum by(user_name, query, col, query_start, pid_text) (sql_pg_transactions_v2{col=~\"backend_xid|backend_xmin\", query!~\".*raterdata.*\", user_name!=\"system user\"}) > 0",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
@@ -5346,7 +5361,7 @@
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 207
+            "y": 183
           },
           "id": 710,
           "interval": "1m",
@@ -5426,7 +5441,7 @@
             "h": 11,
             "w": 12,
             "x": 12,
-            "y": 207
+            "y": 183
           },
           "id": 841,
           "interval": "1m",
@@ -5447,7 +5462,7 @@
             {
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "max by(query, event, user_name, state, pid_text) (sql_pg_parallel_workers_v2)",
+              "expr": "max by(query, user_name, pid_text) (sql_pg_parallel_workers_v2)",
               "format": "table",
               "fullMetaSearch": false,
               "includeNullMetadata": true,
@@ -5593,7 +5608,7 @@
             "h": 22,
             "w": 5,
             "x": 0,
-            "y": 247
+            "y": 1372
           },
           "id": 783,
           "interval": "1m",
@@ -5707,7 +5722,7 @@
             "h": 11,
             "w": 19,
             "x": 5,
-            "y": 247
+            "y": 1372
           },
           "id": 781,
           "interval": "1m",
@@ -5824,7 +5839,7 @@
             "h": 11,
             "w": 19,
             "x": 5,
-            "y": 258
+            "y": 1655
           },
           "id": 792,
           "interval": "1m",
@@ -5942,8 +5957,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5971,7 +5985,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 79
+            "y": 6138
           },
           "id": 821,
           "options": {
@@ -6069,8 +6083,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6282,7 +6295,7 @@
             "h": 22,
             "w": 12,
             "x": 0,
-            "y": 89
+            "y": 6148
           },
           "id": 815,
           "interval": "1m",
@@ -6358,8 +6371,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6571,7 +6583,7 @@
             "h": 22,
             "w": 12,
             "x": 12,
-            "y": 89
+            "y": 6148
           },
           "id": 814,
           "interval": "1m",
@@ -6647,8 +6659,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6860,7 +6871,7 @@
             "h": 22,
             "w": 24,
             "x": 0,
-            "y": 111
+            "y": 6170
           },
           "id": 818,
           "interval": "1m",
@@ -6936,8 +6947,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -7149,7 +7159,7 @@
             "h": 18,
             "w": 12,
             "x": 0,
-            "y": 133
+            "y": 6192
           },
           "id": 819,
           "interval": "1m",
@@ -7248,8 +7258,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -7264,7 +7273,7 @@
             "h": 18,
             "w": 12,
             "x": 12,
-            "y": 133
+            "y": 6192
           },
           "id": 575,
           "interval": "1m",
@@ -7330,8 +7339,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -7407,7 +7415,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 151
+            "y": 6210
           },
           "id": 816,
           "interval": "1m",
@@ -7568,7 +7576,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -7583,7 +7592,7 @@
             "h": 11,
             "w": 24,
             "x": 0,
-            "y": 13014
+            "y": 1101
           },
           "id": 609,
           "interval": "1m",
@@ -7672,7 +7681,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -7688,7 +7698,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 13025
+            "y": 1138
           },
           "id": 832,
           "interval": "1m",
@@ -7751,7 +7761,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -7766,7 +7777,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 13037
+            "y": 1150
           },
           "id": 839,
           "interval": "1m",
@@ -7855,7 +7866,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -7871,7 +7883,7 @@
             "h": 11,
             "w": 24,
             "x": 0,
-            "y": 13049
+            "y": 1162
           },
           "id": 706,
           "interval": "1m",
@@ -7964,7 +7976,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -7980,7 +7993,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 13060
+            "y": 1173
           },
           "id": 616,
           "options": {
@@ -8073,7 +8086,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -8089,7 +8103,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 13072
+            "y": 1185
           },
           "id": 602,
           "options": {
@@ -8197,7 +8211,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 13082
+            "y": 1195
           },
           "id": 618,
           "interval": "1m",
@@ -8282,7 +8296,7 @@
             "h": 8,
             "w": 24,
             "x": 0,
-            "y": 13094
+            "y": 1207
           },
           "id": 608,
           "interval": "1m",
@@ -8362,7 +8376,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -8508,16 +8523,28 @@
                     "value": 344
                   }
                 ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Time"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 204
+                  }
+                ]
               }
             ]
           },
           "gridPos": {
-            "h": 26,
+            "h": 14,
             "w": 24,
             "x": 0,
-            "y": 34119
+            "y": 782
           },
-          "id": 812,
+          "id": 850,
           "interval": "1m",
           "options": {
             "cellHeight": "sm",
@@ -8534,7 +8561,7 @@
             "sortBy": [
               {
                 "desc": true,
-                "displayName": "Query start"
+                "displayName": "I blocked"
               }
             ]
           },
@@ -8543,12 +8570,14 @@
             {
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name,xact_start) (max_over_time(sql_pg_transactions_v2{col=\"query_duration_ms\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name,xact_start) (max_over_time(sql_pg_transactions_v2{col=\"query_duration_ms\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "A",
               "useBackend": false
             },
@@ -8559,13 +8588,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"xact_duration_ms\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"xact_duration_ms\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "B",
               "useBackend": false
             },
@@ -8576,13 +8607,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"current_subtransactions\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"current_subtransactions\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "C",
               "useBackend": false
             },
@@ -8593,13 +8626,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"backend_xid_age\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"backend_xid_age\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "D",
               "useBackend": false
             },
@@ -8610,13 +8645,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"backend_xmin_age\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"backend_xmin_age\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "E",
               "useBackend": false
             },
@@ -8627,13 +8664,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"blocked_by_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"blocked_by_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "F",
               "useBackend": false
             },
@@ -8644,13 +8683,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"blocking_others_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"blocking_others_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "G",
               "useBackend": false
             },
@@ -8661,13 +8702,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"granted_locks_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"granted_locks_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "H",
               "useBackend": false
             },
@@ -8678,13 +8721,15 @@
               },
               "disableTextWrap": false,
               "editorMode": "code",
-              "expr": "avg by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"waiting_locks_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
+              "exemplar": false,
+              "expr": "max by(backend_type, pid_text, query, query_start, user_name, xact_start) (max_over_time(sql_pg_transactions_v2{col=\"waiting_locks_count\", query!~\".*vacuum.*|.*rater.*|.*alloca.*\"}[$__range]))",
               "format": "table",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
+              "instant": true,
               "legendFormat": "__auto",
-              "range": true,
+              "range": false,
               "refId": "I",
               "useBackend": false
             }
@@ -8699,6 +8744,9 @@
               "id": "groupBy",
               "options": {
                 "fields": {
+                  "Time": {
+                    "aggregations": []
+                  },
                   "Value": {
                     "aggregations": [
                       "lastNotNull"
@@ -8845,14 +8893,13 @@
         "x": 0,
         "y": 10
       },
-      "id": 676,
+      "id": 849,
       "panels": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${datasource}"
+            "uid": "PC3E95692D54ABCC0"
           },
-          "description": "",
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -8896,41 +8943,40 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
                     "value": 80
                   }
                 ]
-              }
+              },
+              "unit": "locale"
             },
             "overrides": []
           },
           "gridPos": {
-            "h": 14,
-            "w": 24,
+            "h": 8,
+            "w": 12,
             "x": 0,
-            "y": 44041
+            "y": 1297
           },
-          "id": 679,
+          "id": 848,
           "interval": "1m",
           "options": {
             "legend": {
               "calcs": [
-                "mean",
-                "max",
                 "sum"
               ],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
-              "sortBy": "Mean",
+              "sortBy": "Total",
               "sortDesc": true
             },
             "tooltip": {
               "hideZeros": false,
-              "maxHeight": 600,
               "mode": "single",
               "sort": "none"
             }
@@ -8940,22 +8986,21 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${datasource}"
+                "uid": "PC3E95692D54ABCC0"
               },
               "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "sum by(col, relname) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname!~\".*tmp.*\"}[2m])) / 120 > 0",
+              "editorMode": "builder",
+              "expr": "sum by(relname) (increase(sql_pg_tables_v2{col=~\"idx_scan\"}[1m])) > 0",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
-              "instant": false,
               "legendFormat": "{{relname}}",
               "range": true,
-              "refId": "B",
+              "refId": "A",
               "useBackend": false
             }
           ],
-          "title": "Insert operations",
+          "title": "Index scans PER MINUTE",
           "type": "timeseries"
         },
         {
@@ -9010,7 +9055,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -9023,12 +9069,12 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 14,
-            "w": 24,
-            "x": 0,
-            "y": 44287
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 1297
           },
-          "id": 680,
+          "id": 843,
           "interval": "1m",
           "options": {
             "legend": {
@@ -9058,8 +9104,8 @@
                 "uid": "${datasource}"
               },
               "disableTextWrap": false,
-              "editorMode": "code",
-              "expr": "topk(100, sum by(col, relname) (increase(sql_pg_tables_v2{col=~\"n_tup_del|n_tup_upd|n_tup_ins\", relname!~\"tmp.*\"}[2m])) / 2)",
+              "editorMode": "builder",
+              "expr": "sum by(relname) (increase(sql_pg_tables_v2{col=~\"n_tup_del|n_tup_upd|n_tup_ins\", relname!~\"tmp.*\"}[1m])) > 0",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
@@ -9070,7 +9116,7 @@
               "useBackend": false
             }
           ],
-          "title": "All table operations ",
+          "title": "Busiest tables, operations per minute, log scale",
           "type": "timeseries"
         },
         {
@@ -9121,7 +9167,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -9134,12 +9181,12 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 12,
-            "w": 24,
+            "h": 8,
+            "w": 12,
             "x": 0,
-            "y": 44301
+            "y": 1305
           },
-          "id": 826,
+          "id": 847,
           "interval": "1m",
           "options": {
             "legend": {
@@ -9167,33 +9214,407 @@
               },
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "sum by(relname, col) (increase(sql_pg_tables_v2{col=~\"seq_scan\"}[1m])) > 0",
+              "expr": "sum by(relname) (increase(sql_pg_tables_v2{col=~\"seq_scan\"}[1m])) > 0",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
-              "legendFormat": "{{relname}} | {{col}}",
+              "legendFormat": "{{relname}}",
               "range": true,
               "refId": "B",
               "useBackend": false
+            }
+          ],
+          "title": "Seq scans PER MINUTE",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 0,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
             },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "custproductcharge"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "red",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 1305
+          },
+          "id": 844,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Total",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "PC3E95692D54ABCC0"
+                "uid": "${datasource}"
               },
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "sum by(relname, col) (increase(sql_pg_tables_v2{col=~\"idx_scan\"}[1m])) > 0",
+              "expr": "sum by(relname) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname!~\".*tmp.*\"}[1m])) > 0",
               "fullMetaSearch": false,
               "hide": false,
               "includeNullMetadata": true,
-              "legendFormat": "{{relname}} | {{col}}",
+              "instant": false,
+              "legendFormat": "{{relname}}",
               "range": true,
-              "refId": "A",
+              "refId": "B",
               "useBackend": false
             }
           ],
-          "title": "Seq scans vs index scans PER MINUTE",
+          "title": "Insert operations PER MINUTE",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 0,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "custproductcharge"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "red",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 1313
+          },
+          "id": 846,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Total",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(relname) (increase(sql_pg_tables_v2{col=~\"n_tup_del\", relname!~\".*tmp.*\"}[1m])) > 0",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "{{relname}}",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "Delete operations PER MINUTE",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 0,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "custproductcharge"
+                },
+                "properties": [
+                  {
+                    "id": "color",
+                    "value": {
+                      "fixedColor": "red",
+                      "mode": "fixed"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 1313
+          },
+          "id": 845,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Total",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(relname) (increase(sql_pg_tables_v2{col=~\"n_tup_upd\", relname!~\".*tmp.*\"}[1m])) > 0",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "{{relname}}",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "Update operations PER MINUTE",
           "type": "timeseries"
         }
       ],
@@ -9207,6 +9628,659 @@
         "w": 24,
         "x": 0,
         "y": 11
+      },
+      "id": 865,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 1
+          },
+          "id": 862,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Max",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(index_name) (increase(sql_pg_indexes_v2{col=~\"idx_read_bytes\"}[1m])) / 60 > 0",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "Index reads from file system, bytes per second",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 0,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 1
+          },
+          "id": 863,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Total",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(index_name) (increase(sql_pg_indexes_v2{col=~\"idx_scan\"}[1m])) > 0",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "Index scans PER MINUTE",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "auto"
+                },
+                "filterable": true,
+                "inspect": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Number of indexes"
+                },
+                "properties": [
+                  {
+                    "id": "unit",
+                    "value": "locale"
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 9
+          },
+          "id": 860,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": true
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Size of all indexes"
+              }
+            ]
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "exemplar": false,
+              "expr": "sum by(relname) (sql_pg_indexes_v2{col=\"index_size_bytes\"})",
+              "format": "table",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "instant": true,
+              "legendFormat": "__auto",
+              "range": false,
+              "refId": "A",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PC3E95692D54ABCC0"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "exemplar": false,
+              "expr": "count by(relname) (sql_pg_indexes_v2{col=\"index_size_bytes\"})",
+              "format": "table",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": true,
+              "legendFormat": "__auto",
+              "range": false,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "Indexes per table",
+          "transformations": [
+            {
+              "id": "merge",
+              "options": {}
+            },
+            {
+              "id": "groupBy",
+              "options": {
+                "fields": {
+                  "Value #A": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #B": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "relname": {
+                    "aggregations": [],
+                    "operation": "groupby"
+                  }
+                }
+              }
+            },
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {},
+                "includeByName": {},
+                "indexByName": {
+                  "Value #A (lastNotNull)": 2,
+                  "Value #B (lastNotNull)": 1,
+                  "relname": 0
+                },
+                "renameByName": {
+                  "Value #A (lastNotNull)": "Size of all indexes",
+                  "Value #B (lastNotNull)": "Number of indexes",
+                  "relname": "Table"
+                }
+              }
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "auto"
+                },
+                "filterable": true,
+                "inspect": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Number of indexes"
+                },
+                "properties": [
+                  {
+                    "id": "unit",
+                    "value": "locale"
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 9
+          },
+          "id": 861,
+          "interval": "1m",
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": true
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Number of scans"
+              }
+            ]
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "exemplar": false,
+              "expr": "sum by(relname, index_name) (increase(sql_pg_indexes_v2{col=\"idx_scan\"}[$__range])) > 0",
+              "format": "table",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "Index scans aggregated",
+          "transformations": [
+            {
+              "id": "groupBy",
+              "options": {
+                "fields": {
+                  "Value": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #A": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "Value #B": {
+                    "aggregations": [
+                      "lastNotNull"
+                    ],
+                    "operation": "aggregate"
+                  },
+                  "index_name": {
+                    "aggregations": [],
+                    "operation": "groupby"
+                  },
+                  "relname": {
+                    "aggregations": [],
+                    "operation": "groupby"
+                  }
+                }
+              }
+            },
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {},
+                "includeByName": {},
+                "indexByName": {
+                  "Value #A (lastNotNull)": 2,
+                  "Value #B (lastNotNull)": 1,
+                  "relname": 0
+                },
+                "renameByName": {
+                  "Value #A (lastNotNull)": "Size of all indexes",
+                  "Value #B (lastNotNull)": "Number of indexes",
+                  "Value (lastNotNull)": "Number of scans",
+                  "index_name": "Index",
+                  "relname": "Table"
+                }
+              }
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 17
+          },
+          "id": 864,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": false
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "(sum by(index_name) (increase(sql_pg_indexes_v2{col=~\"idx_tup_read\"}[1m])) / 60 > 0)",
+              "fullMetaSearch": false,
+              "hide": true,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PC3E95692D54ABCC0"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "((sum by(index_name) (increase(sql_pg_indexes_v2{col=~\"idx_tup_fetch\"}[1m])) / 60 > 0)/(sum by(index_name) (increase(sql_pg_indexes_v2{col=~\"idx_tup_read\"}[1m])) / 60 > 0))<1",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "Index fetched tuples / read tuples",
+          "type": "timeseries"
+        }
+      ],
+      "title": "Index stats",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 12
       },
       "id": 562,
       "panels": [
@@ -9589,7 +10663,7 @@
             "h": 13,
             "w": 24,
             "x": 0,
-            "y": 25925
+            "y": 31984
           },
           "id": 656,
           "interval": "1m",
@@ -9715,7 +10789,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 25938
+            "y": 31997
           },
           "id": 613,
           "interval": "1m",
@@ -9825,7 +10899,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 25952
+            "y": 32011
           },
           "id": 614,
           "interval": "1m",
@@ -9935,7 +11009,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 25966
+            "y": 32025
           },
           "id": 615,
           "interval": "1m",
@@ -10045,7 +11119,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 25980
+            "y": 32039
           },
           "id": 619,
           "interval": "1m",
@@ -10097,7 +11171,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 12
+        "y": 13
       },
       "id": 666,
       "panels": [
@@ -10181,7 +11255,7 @@
             "h": 18,
             "w": 24,
             "x": 0,
-            "y": 3033
+            "y": 9092
           },
           "id": 564,
           "interval": "1m",
@@ -10308,7 +11382,7 @@
             "h": 17,
             "w": 24,
             "x": 0,
-            "y": 3051
+            "y": 9110
           },
           "id": 563,
           "interval": "1m",
@@ -10418,7 +11492,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 3068
+            "y": 9127
           },
           "id": 663,
           "interval": "1m",
@@ -10528,7 +11602,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 3082
+            "y": 9141
           },
           "id": 665,
           "interval": "1m",
@@ -10638,7 +11712,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 3096
+            "y": 9155
           },
           "id": 664,
           "interval": "1m",
@@ -10693,7 +11767,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 13
+        "y": 14
       },
       "id": 559,
       "panels": [
@@ -10762,7 +11836,7 @@
             "h": 15,
             "w": 12,
             "x": 0,
-            "y": 13926
+            "y": 19985
           },
           "id": 561,
           "interval": "1m",
@@ -10910,7 +11984,7 @@
             "h": 15,
             "w": 12,
             "x": 12,
-            "y": 13926
+            "y": 19985
           },
           "id": 549,
           "interval": "1m",
@@ -11037,7 +12111,7 @@
             "h": 6,
             "w": 24,
             "x": 0,
-            "y": 13941
+            "y": 20000
           },
           "id": 597,
           "interval": "1m",
@@ -11163,7 +12237,7 @@
             "h": 6,
             "w": 23,
             "x": 1,
-            "y": 13947
+            "y": 20006
           },
           "id": 598,
           "interval": "1m",
@@ -11267,7 +12341,7 @@
             "h": 16,
             "w": 12,
             "x": 0,
-            "y": 13953
+            "y": 20012
           },
           "id": 758,
           "interval": "1m",
@@ -11434,7 +12508,7 @@
             "h": 16,
             "w": 12,
             "x": 12,
-            "y": 13953
+            "y": 20012
           },
           "id": 759,
           "interval": "1m",
@@ -11601,7 +12675,7 @@
             "h": 12,
             "w": 12,
             "x": 0,
-            "y": 13969
+            "y": 20028
           },
           "id": 761,
           "interval": "1m",
@@ -11704,7 +12778,7 @@
             "h": 12,
             "w": 12,
             "x": 12,
-            "y": 13969
+            "y": 20028
           },
           "id": 762,
           "interval": "1m",
@@ -11753,7 +12827,533 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 14
+        "y": 15
+      },
+      "id": 859,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "ms"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 1
+          },
+          "id": 858,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"wal_sync_time_ms|wal_write_time_ms\"}[1m])) / 60",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "WAL write time",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 1
+          },
+          "id": 855,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"wal_writes|wal_syncs\"}[1m])) / 60",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "WAL writes and syncs per second",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 9
+          },
+          "id": 857,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"wal_files_archived\"}[1m]))",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "WAL files archived PER MINUTE",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 9
+          },
+          "id": 854,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"wal_records|wal_fpi\"}[1m])) / 60",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "WAL records and fpi per second",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 17
+          },
+          "id": 856,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "(sum  (increase(sql_pg_cluster_v2{col=~\"wal_records\"}[1m])) / 60)/(sum  (increase(sql_pg_cluster_v2{col=~\"wal_writes\"}[1m])) / 60)",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "WAL records per write",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "WAL write batch size",
+          "type": "timeseries"
+        }
+      ],
+      "title": "WAL stats",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 16
       },
       "id": 572,
       "panels": [
@@ -11806,7 +13406,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -11839,7 +13440,7 @@
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 4419
+            "y": 39
           },
           "id": 784,
           "interval": "1m",
@@ -11937,7 +13538,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -11953,7 +13555,7 @@
             "h": 11,
             "w": 12,
             "x": 12,
-            "y": 4419
+            "y": 39
           },
           "id": 580,
           "interval": "1m",
@@ -12045,7 +13647,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -12061,7 +13664,7 @@
             "h": 12,
             "w": 12,
             "x": 0,
-            "y": 4430
+            "y": 50
           },
           "id": 829,
           "interval": "1m",
@@ -12145,7 +13748,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -12161,7 +13765,7 @@
             "h": 12,
             "w": 12,
             "x": 12,
-            "y": 4430
+            "y": 50
           },
           "id": 655,
           "interval": "1m",
@@ -12256,7 +13860,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -12271,7 +13876,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 4442
+            "y": 62
           },
           "id": 565,
           "interval": "1m",
@@ -12383,7 +13988,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -12398,7 +14004,7 @@
             "h": 10,
             "w": 12,
             "x": 12,
-            "y": 4442
+            "y": 62
           },
           "id": 573,
           "interval": "1m",
@@ -12453,14 +14059,14 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 15
+        "y": 17
       },
       "id": 770,
       "panels": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${datasource}"
           },
           "description": "",
           "fieldConfig": {
@@ -12477,8 +14083,8 @@
                 "barAlignment": 0,
                 "barWidthFactor": 0.6,
                 "drawStyle": "line",
-                "fillOpacity": 40,
-                "gradientMode": "opacity",
+                "fillOpacity": 0,
+                "gradientMode": "none",
                 "hideFrom": {
                   "legend": false,
                   "tooltip": false,
@@ -12501,34 +14107,171 @@
                   "mode": "off"
                 }
               },
-              "decimals": 1,
+              "decimals": 0,
               "mappings": [],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
                   }
                 ]
               },
-              "unit": "Bps"
+              "unit": "bytes"
+            },
+            "overrides": [
+              {
+                "__systemRef": "hideSeriesFrom",
+                "matcher": {
+                  "id": "byNames",
+                  "options": {
+                    "mode": "exclude",
+                    "names": [
+                      "blocks_read_bytes"
+                    ],
+                    "prefix": "All except:",
+                    "readOnly": true
+                  }
+                },
+                "properties": [
+                  {
+                    "id": "custom.hideFrom",
+                    "value": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": true
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 73
+          },
+          "id": 851,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "max",
+                "lastNotNull"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col, database_name) (increase(sql_pg_dbstats_v2{col=~\"blocks_hit_bytes|blocks_read_bytes\", database_name=\"aisprod-bg2\"}[1m])) / 60",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "{{col}}",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "Bytes read from cache and from filesysten",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 33,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "normal"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
             },
             "overrides": []
           },
           "gridPos": {
             "h": 8,
             "w": 12,
-            "x": 0,
-            "y": 3636
+            "x": 12,
+            "y": 73
           },
-          "id": 766,
+          "id": 853,
           "interval": "1m",
           "options": {
             "legend": {
               "calcs": [
-                "mean",
-                "max",
-                "min"
+                "mean"
               ],
               "displayMode": "table",
               "placement": "right",
@@ -12538,34 +14281,128 @@
             },
             "tooltip": {
               "hideZeros": false,
-              "maxHeight": 600,
-              "mode": "multi",
+              "mode": "single",
               "sort": "none"
             }
           },
           "pluginVersion": "11.5.2",
           "targets": [
             {
-              "datasource": {
-                "uid": "$datasource"
-              },
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "irate(node_disk_read_bytes_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
-              "format": "time_series",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"backend_written_bytes|bgwriter_written_bytes|checkpoint_written_bytes|wal_bytes\"}[1m])) / 60",
               "fullMetaSearch": false,
-              "hide": false,
               "includeNullMetadata": true,
-              "interval": "",
-              "intervalFactor": 1,
-              "legendFormat": "{{node}} - {{device}}",
+              "legendFormat": "__auto",
               "range": true,
-              "refId": "B",
-              "step": 240,
+              "refId": "A",
               "useBackend": false
             }
           ],
-          "title": "Read throughput",
+          "title": "Data persisting, bytes per second",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 81
+          },
+          "id": 852,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"cache_miss_buffer_allocations_bytes\"}[1m])) / 60",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "Cache-miss buffers allocated, bytes per second",
           "type": "timeseries"
         },
         {
@@ -12618,7 +14455,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   }
                 ]
               },
@@ -12630,7 +14468,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 3636
+            "y": 81
           },
           "id": 767,
           "interval": "1m",
@@ -12723,17 +14561,18 @@
                   "mode": "off"
                 }
               },
-              "decimals": 0,
+              "decimals": 1,
               "mappings": [],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   }
                 ]
               },
-              "unit": "iops"
+              "unit": "Bps"
             },
             "overrides": []
           },
@@ -12741,9 +14580,9 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 3644
+            "y": 89
           },
-          "id": 768,
+          "id": 766,
           "interval": "1m",
           "options": {
             "legend": {
@@ -12773,7 +14612,7 @@
               },
               "disableTextWrap": false,
               "editorMode": "builder",
-              "expr": "rate(node_disk_reads_completed_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
+              "expr": "irate(node_disk_read_bytes_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
               "format": "time_series",
               "fullMetaSearch": false,
               "hide": false,
@@ -12787,7 +14626,7 @@
               "useBackend": false
             }
           ],
-          "title": "Read IO",
+          "title": "Read throughput",
           "type": "timeseries"
         },
         {
@@ -12840,7 +14679,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   }
                 ]
               },
@@ -12852,7 +14692,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 3644
+            "y": 89
           },
           "id": 769,
           "interval": "1m",
@@ -12900,6 +14740,118 @@
           ],
           "title": "Write IO",
           "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "$datasource"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 40,
+                "gradientMode": "opacity",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 0,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  }
+                ]
+              },
+              "unit": "iops"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 97
+          },
+          "id": 768,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "min"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "uid": "$datasource"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "rate(node_disk_reads_completed_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
+              "format": "time_series",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "interval": "",
+              "intervalFactor": 1,
+              "legendFormat": "{{node}} - {{device}}",
+              "range": true,
+              "refId": "B",
+              "step": 240,
+              "useBackend": false
+            }
+          ],
+          "title": "Read IO",
+          "type": "timeseries"
         }
       ],
       "title": "DB physical IO",
@@ -12911,7 +14863,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 16
+        "y": 18
       },
       "id": 773,
       "panels": [
@@ -12924,7 +14876,7 @@
             "h": 25,
             "w": 13,
             "x": 0,
-            "y": 3483
+            "y": 9542
           },
           "id": 772,
           "options": {
@@ -12959,7 +14911,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 17
+        "y": 19
       },
       "id": 765,
       "panels": [
@@ -13028,7 +14980,7 @@
             "h": 12,
             "w": 12,
             "x": 0,
-            "y": 73011
+            "y": 79070
           },
           "id": 763,
           "interval": "1m",
@@ -13315,7 +15267,7 @@
             "h": 12,
             "w": 12,
             "x": 12,
-            "y": 73011
+            "y": 79070
           },
           "id": 764,
           "interval": "1m",
@@ -13377,7 +15329,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 18
+        "y": 20
       },
       "id": 753,
       "panels": [
@@ -13444,7 +15396,7 @@
             "h": 13,
             "w": 12,
             "x": 0,
-            "y": 330831
+            "y": 336890
           },
           "id": 751,
           "options": {
@@ -13560,7 +15512,7 @@
             "h": 13,
             "w": 12,
             "x": 12,
-            "y": 330831
+            "y": 336890
           },
           "id": 752,
           "options": {
@@ -13714,7 +15666,7 @@
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 333054
+            "y": 339113
           },
           "id": 756,
           "interval": "1m",
@@ -13814,7 +15766,7 @@
             "h": 11,
             "w": 12,
             "x": 12,
-            "y": 333054
+            "y": 339113
           },
           "id": 755,
           "interval": "1m",
@@ -13854,6 +15806,372 @@
         }
       ],
       "title": "CRM API <–> DB connections",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "id": 676,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 14,
+            "w": 24,
+            "x": 0,
+            "y": 1376
+          },
+          "id": 679,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(col, relname) (increase(sql_pg_tables_v2{col=~\"n_tup_ins\", relname!~\".*tmp.*\"}[2m])) / 120 > 0",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "{{relname}}",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "Insert operations",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": true,
+                "axisCenteredZero": false,
+                "axisColorMode": "series",
+                "axisGridShow": false,
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "log": 10,
+                  "type": "log"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "min": 0,
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 14,
+            "w": 24,
+            "x": 0,
+            "y": 1390
+          },
+          "id": 680,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Total",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${datasource}"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "topk(100, sum by(col, relname) (increase(sql_pg_tables_v2{col=~\"n_tup_del|n_tup_upd|n_tup_ins\", relname!~\"tmp.*\"}[2m])) / 2)",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "instant": false,
+              "legendFormat": "{{relname}} – {{col}}",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            }
+          ],
+          "title": "All table operations ",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "locale"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 12,
+            "w": 24,
+            "x": 0,
+            "y": 1404
+          },
+          "id": 826,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "sum"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Total",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PC3E95692D54ABCC0"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(relname, col) (increase(sql_pg_tables_v2{col=~\"seq_scan\"}[1m])) > 0",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "legendFormat": "{{relname}} | {{col}}",
+              "range": true,
+              "refId": "B",
+              "useBackend": false
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PC3E95692D54ABCC0"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(relname, col) (increase(sql_pg_tables_v2{col=~\"idx_scan\"}[1m])) > 0",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "legendFormat": "{{relname}} | {{col}}",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "Seq scans vs index scans PER MINUTE",
+          "type": "timeseries"
+        }
+      ],
+      "title": "Old table stats",
       "type": "row"
     }
   ],
@@ -13972,6 +16290,6 @@
   "timezone": "browser",
   "title": "NRM Health Monitoring final",
   "uid": "d78148329b628f4f4712c53227877e73eda1964d",
-  "version": 136,
+  "version": 142,
   "weekStart": ""
 }
