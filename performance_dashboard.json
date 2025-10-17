@@ -440,7 +440,7 @@
             "h": 10,
             "w": 8,
             "x": 0,
-            "y": 19390
+            "y": 70880
           },
           "id": 723,
           "interval": "1m",
@@ -570,7 +570,7 @@
             "h": 10,
             "w": 8,
             "x": 8,
-            "y": 19390
+            "y": 70880
           },
           "id": 684,
           "interval": "1m",
@@ -699,7 +699,7 @@
             "h": 10,
             "w": 8,
             "x": 16,
-            "y": 19390
+            "y": 70880
           },
           "id": 793,
           "interval": "1m",
@@ -826,7 +826,7 @@
             "h": 11,
             "w": 24,
             "x": 0,
-            "y": 88766
+            "y": 140256
           },
           "id": 739,
           "interval": "1m",
@@ -938,7 +938,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 138027
+            "y": 189517
           },
           "id": 744,
           "interval": "1m",
@@ -1026,7 +1026,7 @@
             "h": 13,
             "w": 12,
             "x": 0,
-            "y": 138039
+            "y": 189529
           },
           "id": 740,
           "interval": "1m",
@@ -1133,7 +1133,7 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 138039
+            "y": 189529
           },
           "id": 754,
           "interval": "1m",
@@ -1238,7 +1238,7 @@
             "h": 4,
             "w": 12,
             "x": 12,
-            "y": 138048
+            "y": 189538
           },
           "id": 741,
           "interval": "1m",
@@ -1413,7 +1413,7 @@
             "h": 9,
             "w": 24,
             "x": 0,
-            "y": 3
+            "y": 30
           },
           "id": 858,
           "interval": "1m",
@@ -1591,7 +1591,7 @@
             "h": 13,
             "w": 5,
             "x": 0,
-            "y": 9712
+            "y": 41324
           },
           "id": 702,
           "interval": "1m",
@@ -1714,7 +1714,7 @@
             "h": 13,
             "w": 10,
             "x": 5,
-            "y": 9712
+            "y": 41324
           },
           "id": 834,
           "interval": "1m",
@@ -1810,7 +1810,7 @@
             "h": 13,
             "w": 9,
             "x": 15,
-            "y": 9712
+            "y": 41324
           },
           "id": 693,
           "interval": "1m",
@@ -1893,7 +1893,7 @@
             "h": 17,
             "w": 24,
             "x": 0,
-            "y": 9752
+            "y": 41337
           },
           "id": 715,
           "interval": "1m",
@@ -1997,7 +1997,7 @@
             "h": 13,
             "w": 12,
             "x": 0,
-            "y": 9769
+            "y": 41354
           },
           "id": 794,
           "interval": "1m",
@@ -2102,7 +2102,7 @@
             "h": 13,
             "w": 12,
             "x": 12,
-            "y": 9769
+            "y": 41354
           },
           "id": 777,
           "interval": "1m",
@@ -2236,7 +2236,7 @@
             "h": 18,
             "w": 24,
             "x": 0,
-            "y": 4
+            "y": 31
           },
           "id": 564,
           "interval": "1m",
@@ -2364,7 +2364,7 @@
             "h": 17,
             "w": 24,
             "x": 0,
-            "y": 4922
+            "y": 25972
           },
           "id": 563,
           "interval": "1m",
@@ -2475,7 +2475,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 4939
+            "y": 25989
           },
           "id": 663,
           "interval": "1m",
@@ -2586,7 +2586,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 4953
+            "y": 26003
           },
           "id": 665,
           "interval": "1m",
@@ -2697,7 +2697,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 4967
+            "y": 26017
           },
           "id": 664,
           "interval": "1m",
@@ -2823,7 +2823,7 @@
             "h": 13,
             "w": 24,
             "x": 0,
-            "y": 14584
+            "y": 66074
           },
           "id": 656,
           "interval": "1m",
@@ -2950,7 +2950,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 14597
+            "y": 66087
           },
           "id": 613,
           "interval": "1m",
@@ -3061,7 +3061,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 14611
+            "y": 66101
           },
           "id": 614,
           "interval": "1m",
@@ -3172,7 +3172,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 14625
+            "y": 66115
           },
           "id": 615,
           "interval": "1m",
@@ -3266,7 +3266,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -3282,7 +3283,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 14639
+            "y": 66129
           },
           "id": 619,
           "interval": "1m",
@@ -3422,7 +3423,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 115795
+            "y": 167285
           },
           "id": 846,
           "interval": "1m",
@@ -3823,8 +3824,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   }
                 ]
               },
@@ -4345,8 +4345,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4362,7 +4361,7 @@
             "h": 15,
             "w": 12,
             "x": 0,
-            "y": 52
+            "y": 51324
           },
           "id": 806,
           "interval": "1m",
@@ -4448,8 +4447,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4465,7 +4463,7 @@
             "h": 15,
             "w": 12,
             "x": 12,
-            "y": 52
+            "y": 51324
           },
           "id": 786,
           "interval": "1m",
@@ -4552,8 +4550,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4569,7 +4566,7 @@
             "h": 15,
             "w": 24,
             "x": 0,
-            "y": 67
+            "y": 51339
           },
           "id": 688,
           "interval": "1m",
@@ -4682,7 +4679,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -4847,7 +4845,7 @@
             "h": 26,
             "w": 24,
             "x": 0,
-            "y": 118033
+            "y": 35
           },
           "id": 812,
           "interval": "1m",
@@ -4865,8 +4863,8 @@
             "showHeader": true,
             "sortBy": [
               {
-                "desc": false,
-                "displayName": "Query start"
+                "desc": true,
+                "displayName": "I blocked"
               }
             ]
           },
@@ -5265,7 +5263,7 @@
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 309469
+            "y": 9
           },
           "id": 710,
           "interval": "1m",
@@ -5360,7 +5358,7 @@
             "h": 11,
             "w": 12,
             "x": 12,
-            "y": 309469
+            "y": 9
           },
           "id": 843,
           "interval": "1m",
@@ -5484,7 +5482,7 @@
             "h": 22,
             "w": 5,
             "x": 0,
-            "y": 309480
+            "y": 51324
           },
           "id": 783,
           "interval": "1m",
@@ -5597,7 +5595,7 @@
             "h": 11,
             "w": 19,
             "x": 5,
-            "y": 309480
+            "y": 51324
           },
           "id": 781,
           "interval": "1m",
@@ -5713,7 +5711,7 @@
             "h": 11,
             "w": 19,
             "x": 5,
-            "y": 309491
+            "y": 51335
           },
           "id": 792,
           "interval": "1m",
@@ -5860,7 +5858,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 118035
+            "y": 169525
           },
           "id": 821,
           "options": {
@@ -6171,7 +6169,7 @@
             "h": 22,
             "w": 12,
             "x": 0,
-            "y": 118045
+            "y": 169535
           },
           "id": 815,
           "interval": "1m",
@@ -6451,7 +6449,7 @@
             "h": 22,
             "w": 12,
             "x": 12,
-            "y": 118045
+            "y": 169535
           },
           "id": 814,
           "interval": "1m",
@@ -6731,7 +6729,7 @@
             "h": 22,
             "w": 24,
             "x": 0,
-            "y": 118067
+            "y": 169557
           },
           "id": 818,
           "interval": "1m",
@@ -7011,7 +7009,7 @@
             "h": 18,
             "w": 12,
             "x": 0,
-            "y": 118089
+            "y": 169579
           },
           "id": 819,
           "interval": "1m",
@@ -7117,7 +7115,7 @@
             "h": 18,
             "w": 12,
             "x": 12,
-            "y": 118089
+            "y": 169579
           },
           "id": 575,
           "interval": "1m",
@@ -7263,7 +7261,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 118107
+            "y": 169597
           },
           "id": 816,
           "interval": "1m",
@@ -7441,7 +7439,7 @@
             "h": 11,
             "w": 24,
             "x": 0,
-            "y": 309421
+            "y": 360911
           },
           "id": 609,
           "interval": "1m",
@@ -7546,7 +7544,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 311248
+            "y": 362738
           },
           "id": 832,
           "interval": "1m",
@@ -7626,7 +7624,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 311260
+            "y": 362750
           },
           "id": 839,
           "interval": "1m",
@@ -7732,7 +7730,7 @@
             "h": 11,
             "w": 24,
             "x": 0,
-            "y": 311272
+            "y": 362762
           },
           "id": 706,
           "interval": "1m",
@@ -7841,7 +7839,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 311283
+            "y": 362773
           },
           "id": 616,
           "options": {
@@ -7950,7 +7948,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 311295
+            "y": 362785
           },
           "id": 602,
           "options": {
@@ -8058,7 +8056,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 311305
+            "y": 362795
           },
           "id": 848,
           "options": {
@@ -8166,7 +8164,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 311315
+            "y": 362805
           },
           "id": 849,
           "options": {
@@ -8250,7 +8248,7 @@
             "h": 8,
             "w": 24,
             "x": 0,
-            "y": 311325
+            "y": 362815
           },
           "id": 608,
           "interval": "1m",
@@ -8376,7 +8374,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 115801
+            "y": 41234
           },
           "id": 680,
           "interval": "1m",
@@ -8506,7 +8504,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 115815
+            "y": 41248
           },
           "id": 679,
           "interval": "1m",
@@ -8636,7 +8634,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 115829
+            "y": 41262
           },
           "id": 845,
           "interval": "1m",
@@ -8759,30 +8757,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "__systemRef": "hideSeriesFrom",
-                "matcher": {
-                  "id": "byNames",
-                  "options": {
-                    "mode": "exclude",
-                    "names": [
-                      "custproductattrdetails"
-                    ],
-                    "prefix": "All except:",
-                    "readOnly": true
-                  }
-                },
-                "properties": [
-                  {
-                    "id": "custom.hideFrom",
-                    "value": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": true
-                    }
-                  }
-                ]
               }
             ]
           },
@@ -8790,7 +8764,7 @@
             "h": 14,
             "w": 24,
             "x": 0,
-            "y": 115843
+            "y": 41276
           },
           "id": 844,
           "interval": "1m",
@@ -8834,7 +8808,7 @@
               "useBackend": false
             }
           ],
-          "title": "Insert operations PER MINUTE",
+          "title": "Delete operations PER MINUTE",
           "type": "timeseries"
         },
         {
@@ -8902,7 +8876,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 115857
+            "y": 41290
           },
           "id": 826,
           "interval": "1m",
@@ -9010,7 +8984,7 @@
             "h": 12,
             "w": 24,
             "x": 0,
-            "y": 115869
+            "y": 41302
           },
           "id": 841,
           "interval": "1m",
@@ -9118,7 +9092,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 115881
+            "y": 41314
           },
           "id": 875,
           "interval": "1m",
@@ -9240,7 +9214,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 115892
+            "y": 40
           },
           "id": 869,
           "options": {
@@ -9399,7 +9373,7 @@
             "h": 10,
             "w": 12,
             "x": 12,
-            "y": 115892
+            "y": 40
           },
           "id": 870,
           "interval": "1m",
@@ -9560,7 +9534,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 116112
+            "y": 65
           },
           "id": 872,
           "interval": "1m",
@@ -9665,7 +9639,7 @@
             "h": 10,
             "w": 12,
             "x": 12,
-            "y": 116112
+            "y": 65
           },
           "id": 874,
           "interval": "1m",
@@ -9770,7 +9744,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 116122
+            "y": 75
           },
           "id": 873,
           "interval": "1m",
@@ -9783,7 +9757,7 @@
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
-              "sortBy": "Name",
+              "sortBy": "Mean",
               "sortDesc": false
             },
             "tooltip": {
@@ -9859,7 +9833,7 @@
                 "barAlignment": 0,
                 "barWidthFactor": 0.6,
                 "drawStyle": "line",
-                "fillOpacity": 0,
+                "fillOpacity": 33,
                 "gradientMode": "none",
                 "hideFrom": {
                   "legend": false,
@@ -9877,7 +9851,7 @@
                 "spanNulls": false,
                 "stacking": {
                   "group": "A",
-                  "mode": "none"
+                  "mode": "normal"
                 },
                 "thresholdsStyle": {
                   "mode": "off"
@@ -9902,10 +9876,10 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 8,
+            "h": 11,
             "w": 12,
             "x": 0,
-            "y": 14
+            "y": 296
           },
           "id": 859,
           "interval": "1m",
@@ -10005,10 +9979,10 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 8,
+            "h": 11,
             "w": 12,
             "x": 12,
-            "y": 14
+            "y": 296
           },
           "id": 861,
           "interval": "1m",
@@ -10091,7 +10065,7 @@
             "h": 6,
             "w": 12,
             "x": 0,
-            "y": 22
+            "y": 307
           },
           "id": 597,
           "interval": "1m",
@@ -10216,7 +10190,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 22
+            "y": 307
           },
           "id": 863,
           "interval": "1m",
@@ -10319,7 +10293,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 28
+            "y": 313
           },
           "id": 860,
           "interval": "1m",
@@ -10420,7 +10394,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 30
+            "y": 315
           },
           "id": 865,
           "interval": "1m",
@@ -10523,7 +10497,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 36
+            "y": 321
           },
           "id": 866,
           "interval": "1m",
@@ -10623,7 +10597,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 38
+            "y": 323
           },
           "id": 864,
           "interval": "1m",
@@ -10741,7 +10715,7 @@
             "h": 15,
             "w": 12,
             "x": 0,
-            "y": 115894
+            "y": 42
           },
           "id": 561,
           "interval": "1m",
@@ -10890,7 +10864,7 @@
             "h": 15,
             "w": 12,
             "x": 12,
-            "y": 115894
+            "y": 42
           },
           "id": 549,
           "interval": "1m",
@@ -10999,8 +10973,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -11016,7 +10989,7 @@
             "h": 15,
             "w": 12,
             "x": 0,
-            "y": 115895
+            "y": 167385
           },
           "id": 758,
           "interval": "1m",
@@ -11167,8 +11140,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -11184,7 +11156,7 @@
             "h": 15,
             "w": 12,
             "x": 12,
-            "y": 115895
+            "y": 167385
           },
           "id": 759,
           "interval": "1m",
@@ -11335,8 +11307,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -11352,7 +11323,7 @@
             "h": 12,
             "w": 12,
             "x": 0,
-            "y": 115989
+            "y": 167479
           },
           "id": 761,
           "interval": "1m",
@@ -11439,8 +11410,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -11456,7 +11426,7 @@
             "h": 12,
             "w": 12,
             "x": 12,
-            "y": 115989
+            "y": 167479
           },
           "id": 762,
           "interval": "1m",
@@ -11592,7 +11562,7 @@
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 115806
+            "y": 374
           },
           "id": 784,
           "interval": "1m",
@@ -11708,7 +11678,7 @@
             "h": 11,
             "w": 12,
             "x": 12,
-            "y": 115806
+            "y": 374
           },
           "id": 855,
           "options": {
@@ -11997,7 +11967,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 115817
+            "y": 385
           },
           "id": 852,
           "interval": "1m",
@@ -12169,7 +12139,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 115817
+            "y": 385
           },
           "id": 853,
           "interval": "1m",
@@ -12357,7 +12327,7 @@
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 115825
+            "y": 393
           },
           "id": 851,
           "interval": "1m",
@@ -12488,7 +12458,7 @@
             "h": 11,
             "w": 12,
             "x": 12,
-            "y": 115825
+            "y": 393
           },
           "id": 854,
           "interval": "1m",
@@ -12601,7 +12571,7 @@
             "h": 12,
             "w": 12,
             "x": 0,
-            "y": 115836
+            "y": 404
           },
           "id": 829,
           "interval": "1m",
@@ -12702,7 +12672,7 @@
             "h": 12,
             "w": 12,
             "x": 12,
-            "y": 115836
+            "y": 404
           },
           "id": 655,
           "interval": "1m",
@@ -12813,7 +12783,7 @@
             "h": 10,
             "w": 12,
             "x": 0,
-            "y": 115848
+            "y": 416
           },
           "id": 565,
           "interval": "1m",
@@ -12941,7 +12911,7 @@
             "h": 10,
             "w": 12,
             "x": 12,
-            "y": 115848
+            "y": 416
           },
           "id": 573,
           "interval": "1m",
@@ -13061,13 +13031,38 @@
               },
               "unit": "bytes"
             },
-            "overrides": []
+            "overrides": [
+              {
+                "__systemRef": "hideSeriesFrom",
+                "matcher": {
+                  "id": "byNames",
+                  "options": {
+                    "mode": "exclude",
+                    "names": [
+                      "blocks_read_bytes"
+                    ],
+                    "prefix": "All except:",
+                    "readOnly": true
+                  }
+                },
+                "properties": [
+                  {
+                    "id": "custom.hideFrom",
+                    "value": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": true
+                    }
+                  }
+                ]
+              }
+            ]
           },
           "gridPos": {
             "h": 11,
             "w": 12,
             "x": 0,
-            "y": 9718
+            "y": 335
           },
           "id": 580,
           "interval": "1m",
@@ -13109,6 +13104,109 @@
             }
           ],
           "title": "Bytes read from cache and from filesysten",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PC3E95692D54ABCC0"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 33,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "normal"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 11,
+            "w": 12,
+            "x": 12,
+            "y": 335
+          },
+          "id": 878,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(col) (increase(sql_pg_cluster_v2{col=~\"backend_written_bytes|bgwriter_written_bytes|checkpoint_written_bytes|wal_bytes\"}[1m])) / 60",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "Data persisting, bytes per second",
           "type": "timeseries"
         },
         {
@@ -13175,8 +13273,8 @@
           "gridPos": {
             "h": 11,
             "w": 12,
-            "x": 12,
-            "y": 9718
+            "x": 0,
+            "y": 346
           },
           "id": 862,
           "interval": "1m",
@@ -13276,8 +13374,232 @@
           "gridPos": {
             "h": 8,
             "w": 12,
+            "x": 12,
+            "y": 346
+          },
+          "id": 767,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "min"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "uid": "$datasource"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "sum by(node) (irate(node_disk_written_bytes_total{node=~\"pnrmdbs801|pnrmdbs802\", device=\"dm-7\"}[1m]))",
+              "format": "time_series",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "interval": "",
+              "intervalFactor": 1,
+              "legendFormat": "{{node}} - {{device}}",
+              "range": true,
+              "refId": "B",
+              "step": 240,
+              "useBackend": false
+            }
+          ],
+          "title": "Write throughput",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "$datasource"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 40,
+                "gradientMode": "opacity",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 0,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  }
+                ]
+              },
+              "unit": "iops"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 354
+          },
+          "id": 769,
+          "interval": "1m",
+          "options": {
+            "legend": {
+              "calcs": [
+                "mean",
+                "max",
+                "min"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "maxHeight": 600,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "11.5.2",
+          "targets": [
+            {
+              "datasource": {
+                "uid": "$datasource"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "rate(node_disk_writes_completed_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
+              "format": "time_series",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "interval": "",
+              "intervalFactor": 1,
+              "legendFormat": "{{node}} - {{device}}",
+              "range": true,
+              "refId": "B",
+              "step": 240,
+              "useBackend": false
+            }
+          ],
+          "title": "Write IO",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "$datasource"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 40,
+                "gradientMode": "opacity",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "decimals": 1,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  }
+                ]
+              },
+              "unit": "Bps"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
             "x": 0,
-            "y": 9729
+            "y": 357
           },
           "id": 766,
           "interval": "1m",
@@ -13370,118 +13692,6 @@
                   "mode": "off"
                 }
               },
-              "decimals": 1,
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": null
-                  }
-                ]
-              },
-              "unit": "Bps"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 12,
-            "x": 12,
-            "y": 9729
-          },
-          "id": 767,
-          "interval": "1m",
-          "options": {
-            "legend": {
-              "calcs": [
-                "mean",
-                "max",
-                "min"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "hideZeros": false,
-              "maxHeight": 600,
-              "mode": "multi",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.5.2",
-          "targets": [
-            {
-              "datasource": {
-                "uid": "$datasource"
-              },
-              "disableTextWrap": false,
-              "editorMode": "builder",
-              "expr": "irate(node_disk_written_bytes_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
-              "format": "time_series",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "interval": "",
-              "intervalFactor": 1,
-              "legendFormat": "{{node}} - {{device}}",
-              "range": true,
-              "refId": "B",
-              "step": 240,
-              "useBackend": false
-            }
-          ],
-          "title": "Write throughput",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "$datasource"
-          },
-          "description": "",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "barWidthFactor": 0.6,
-                "drawStyle": "line",
-                "fillOpacity": 40,
-                "gradientMode": "opacity",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "always",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
               "decimals": 0,
               "mappings": [],
               "thresholds": {
@@ -13501,7 +13711,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 9737
+            "y": 365
           },
           "id": 768,
           "interval": "1m",
@@ -13548,118 +13758,6 @@
             }
           ],
           "title": "Read IO",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "$datasource"
-          },
-          "description": "",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "barWidthFactor": 0.6,
-                "drawStyle": "line",
-                "fillOpacity": 40,
-                "gradientMode": "opacity",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "always",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "decimals": 0,
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": null
-                  }
-                ]
-              },
-              "unit": "iops"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 12,
-            "x": 12,
-            "y": 9737
-          },
-          "id": 769,
-          "interval": "1m",
-          "options": {
-            "legend": {
-              "calcs": [
-                "mean",
-                "max",
-                "min"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "hideZeros": false,
-              "maxHeight": 600,
-              "mode": "multi",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.5.2",
-          "targets": [
-            {
-              "datasource": {
-                "uid": "$datasource"
-              },
-              "disableTextWrap": false,
-              "editorMode": "builder",
-              "expr": "rate(node_disk_writes_completed_total{node=~\"pnrmdbs801|pnrmdbs802\", device=~\"dm-7\"}[1m])",
-              "format": "time_series",
-              "fullMetaSearch": false,
-              "hide": false,
-              "includeNullMetadata": true,
-              "interval": "",
-              "intervalFactor": 1,
-              "legendFormat": "{{node}} - {{device}}",
-              "range": true,
-              "refId": "B",
-              "step": 240,
-              "useBackend": false
-            }
-          ],
-          "title": "Write IO",
           "type": "timeseries"
         }
       ],
@@ -13754,7 +13852,7 @@
     ]
   },
   "time": {
-    "from": "now-3h",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {
@@ -13766,6 +13864,6 @@
   "timezone": "browser",
   "title": "PostgreSQL Performance Troubleshooting",
   "uid": "af0cux4wi7jeof",
-  "version": 54,
+  "version": 58,
   "weekStart": ""
 }
